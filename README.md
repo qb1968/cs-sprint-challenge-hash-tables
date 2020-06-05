@@ -23,11 +23,32 @@ Commit your code regularly and meaningfully. This practice helps both you (in ca
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your answers beforehand.
 
 1. Hashing functions
+It is any function that can be used to map data of size to a fixed size. The returned values are called hashes. They are used to index a fixed size table called a hash table.
+
 2. Collision resolution
+A way to handle collisions when two or more items should be kept in same location, especially in hash tables.
+
 3. Performance of basic hash table operations
+They are used to implement dictionary and map data structures and offer efficient lookup, insert, and delete operations.
+
 4. Load factor
+It is the number of keys stored in the hash table divided by the capacity.
+
 5. Automatic resizing
+Say we have a hash table with a size of 101. If the table got full we would need a way to increase it. Re-implementing the put method so that the table will automatically resize itself when the loading factor reaches a predetermined value (you can decide the value based on your assessment of load versus performance). Remember that all current data will have to be re-hashed based on the new table size.  
+
 6. Various use cases for hash tables
+Storing anything where you need access based on a non integer
+Storing anything where you need sparse storage even based on an integer.
+Storing anything where there is no need to access data in the order the data is inserted (see note below).
+Storage where insertion and access both need to be fast.
+Storage where uniqueness is useful.
+
+Examples include :
+
+Text index into flatter data structures - use a hashtable to index data items in an array/list.
+Implementation of a sparsely filled map - where the co-ordinate is the key.
+
 
 We expect you to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
