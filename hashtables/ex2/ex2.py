@@ -38,6 +38,6 @@ tickets = [ticket_1, ticket_2, ticket_3, ticket_4, ticket_5,
                    ticket_6, ticket_7, ticket_8, ticket_9, ticket_10]
 
 
-result = reconstruct_trip(tickets, 10)
+answer = reconstruct_trip(tickets, 10)
 
-print(result)
+print(answer)
